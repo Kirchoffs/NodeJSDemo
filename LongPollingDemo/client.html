@@ -16,12 +16,14 @@
           .then((message) => (document.getElementById("messages").innerHTML += `${message} <br>`))
           .finally(() => poll());
       }
+
       function message(message) {
         fetch("/message", {
           method: "POST",
           body: message,
         });
       }
+      
       poll();
     </script>
   </body>

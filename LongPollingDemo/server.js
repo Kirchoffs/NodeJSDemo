@@ -14,7 +14,7 @@ To send the message
 
 const pool = [];
 function handlePoll(req, res) {
-  pool.push(res); // when res.end() is called, the message will be returned to the front end
+  pool.push(res); // when res.end() is called, the message will be returned to the client
 }
 
 function handlePage(req, res) {
